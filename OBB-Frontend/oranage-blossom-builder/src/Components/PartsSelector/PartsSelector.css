@@ -1,0 +1,36 @@
+.buildContainer{
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 300px;
+    height: 500px;
+    background-color: blanchedalmond;
+}
+
+.buildContainer .dollBody {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-color:aqua;
+    width: 300px;
+    height: 500px;
+}
+
+.buildContainer .dollOutfit {
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-color:aqua;
+    width: 300px;
+    height: 500px;
+}
+
+.buildContainer .dollShoes {
+    position: absolute;
+    top:0px;
+    left:0px;
+    border-color:aqua;
+    width: 300px;
+    height: 500px;
+}
+
