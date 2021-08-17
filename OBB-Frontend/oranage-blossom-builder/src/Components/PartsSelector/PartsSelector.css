@@ -1,9 +1,9 @@
 .buildContainer{
     position: relative;
     top: 0;
-    left: 50%;
-    width: 300px;
-    height: 500px;
+    left: 25%;
+    width: 500px;
+    height: 600px;
     background-color: blanchedalmond;
 }
 
@@ -12,8 +12,8 @@
     top: 0px;
     left: 0px;
     border-color:aqua;
-    width: 300px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 }
 
 .buildContainer .dollOutfit {
@@ -21,8 +21,8 @@
     top:0px;
     left:0px;
     border-color:aqua;
-    width: 300px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 }
 
 .buildContainer .dollShoes {
@@ -30,7 +30,7 @@
     top:0px;
     left:0px;
     border-color:aqua;
-    width: 300px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 }
 
