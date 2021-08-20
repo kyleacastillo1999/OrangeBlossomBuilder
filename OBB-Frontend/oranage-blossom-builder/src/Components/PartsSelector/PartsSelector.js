@@ -1,5 +1,7 @@
 import {useState} from 'react';
-import BodySelector from "./BodySelector";
+import BodySelector from './BodySelector';
+import OutfitSelector from './OutfitSelector';
+import ShoeSelector from './ShoeSelector';
 import './PartsSelector.css';
 
 /**
@@ -30,35 +32,9 @@ const PartsSelector = () =>{
                 <img className="dollShoes" src={`DollParts/Shoes/${selectedDollShoes}.png`} alt="Doll shoes 1" />
                 <img className="dollOutfit" src={`DollParts/Outfit/${selectedDollOutfit}.png`} alt="Doll outfit 1" />
             </div>
-            <form>
-                <label for="pickDollBody">Choose a body: </label>
-                <select name="pickDollBody" onChange={setDollBodyHandler}>
-                    <option value="Dollies-1">Doll 1</option>
-                    <option value="Dollies-2">Doll 2</option>
-                    <option value="Dollies-3">Doll 3</option>
-                    <option value="Dollies-4">Doll 4</option>
-                    <option value="Dollies-5">Doll 5</option>
-                    <option value="Dollies-6">Doll 6</option>
-                    <option value="Dollies-7">Doll 7</option>
-                </select>
-            </form>
-
-            <form>
-                <label for="pickDollOutift">Choose an outfit: </label>
-                <select name="pickDollOutfit" onChange={setDollOutfitHandler}>
-                    <option value="Outfit-1">Outfit 1</option>
-                    <option value="Outfit-2">Outfit 2</option>
-                </select>
-            </form>
-
-            <form>
-                <label for="pickDollShoes">Choose shoes: </label>
-                <select name="pickDollShoes" onChange={setDollShoesHandler}>
-                    <option value="Shoes-1">Shoes 1</option>
-                    <option value="Shoes-2">Shoes 2</option>
-                    <option value="Shoes-3">Shoes 3</option>
-                </select>
-            </form>
+            <BodySelector callbackDollBody={setDollBodyHandler} />
+            <OutfitSelector callbackDollOutfit={setDollOutfitHandler} />
+            <ShoeSelector callbackDollShoes={setDollShoesHandler} />
         </div>
     );
 }
