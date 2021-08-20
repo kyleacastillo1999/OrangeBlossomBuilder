@@ -1,4 +1,9 @@
 
+/**
+ * The OutfitSelector component is currently hard coded and should not be used
+ * when deployed. This component needs to dynamically gather and render a list
+ * based on a database implementation.
+ */
 const OutfitSelector = (props) =>{
 
     return(
