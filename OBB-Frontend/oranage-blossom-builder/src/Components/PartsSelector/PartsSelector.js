@@ -30,7 +30,7 @@ const PartsSelector = () =>{
      * component to render the new doll part to the page. 
      */
     const setDollBodyHandler = (event) =>{
-        setDollBody(event.target.value);
+        setDollBody(event);
     }
 
     /**
@@ -38,7 +38,7 @@ const PartsSelector = () =>{
      * component to render the new doll part to the page. 
      */
     const setDollOutfitHandler = (event) =>{
-        setDollOutfit(event.target.value);
+        setDollOutfit(event);
     }
 
     /**
@@ -46,7 +46,7 @@ const PartsSelector = () =>{
      * component to render the new doll part to the page. 
      */
     const setDollShoesHandler = (event) =>{
-        setDollShoes(event.target.value);
+        setDollShoes(event);
     }
 
     return(

@@ -1,3 +1,5 @@
+import { useState } from "react";
+import './PartsSelector.css';
 
 /**
  * The OutfitSelector component is currently hard coded and should not be used
@@ -6,15 +8,21 @@
  */
 const OutfitSelector = (props) =>{
 
+    const [dollOutfit, setDollOutfit] = useState('Outfit-1');
+
+    const setDollOutfitHandler = (event) =>{
+        setDollOutfit(event.target.alt);
+        dollOutfitSelectionHandler();
+    }
+
+    const dollOutfitSelectionHandler = () =>{
+        props.callbackDollOutfit(dollOutfit);
+    }
+
     return(
         <div>
-        <form>
-            <label for="pickDollOutift">Choose an outfit: </label>
-                <select name="pickDollOutfit" onChange={props.callbackDollOutfit}>
-                    <option value="Outfit-1">Outfit 1</option>
-                    <option value="Outfit-2">Outfit 2</option>
-                </select>
-        </form>
+            <img className="previewDollBody" src={`DollParts/Outfit/Outfit-1.png`} alt="Outfit-1" onClick={setDollOutfitHandler}/>
+            <img className="previewDollBody" src={`DollParts/Outfit/Outfit-2.png`} alt="Outfit-2" onClick={setDollOutfitHandler}/>
         </div>
     );
 }
